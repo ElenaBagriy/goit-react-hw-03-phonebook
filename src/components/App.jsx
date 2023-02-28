@@ -38,9 +38,9 @@ class App extends Component {
   onFilterChange = (e) => {
     let contactToFind = e.target.value.trim();
 
-    this.setState(prevState => ({
+    this.setState({
       filter: contactToFind,
-    }));
+    });
   }
 
   getFilteredContacts = () => {
